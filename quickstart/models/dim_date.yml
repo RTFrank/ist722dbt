@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: dim_date
+    description: conformed date dim
+    columns:
+      - name: datekey
+        data_type: int
+        description: YYYYMMDD
+        tests:
+          - not_null
+          - unique
+  - name: date
+    description: date
+    tests:
+      - not_null
+      - unique
